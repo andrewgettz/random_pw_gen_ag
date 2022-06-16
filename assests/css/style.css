@@ -1,8 +1,11 @@
+/* Global Styling*/
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
+
+/* End of Global Styling */
 
 html,
 body,
@@ -30,6 +33,7 @@ header {
   color: hsl(206, 17%, 28%);
 }
 
+/* Start of Card Header Styling*/ 
 .card {
   background-color: hsl(0, 0%, 100%);
   border-radius: 5px;
@@ -49,11 +53,35 @@ header {
   background: #e7e9eb;
   height: 2px;
 }
+/* End of Card Header Styling*/ 
 
+/* Card Body Styling*/ 
 .card-body {
   min-height: 100px;
 }
 
+#password {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  display: block;
+  width: 100%;
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 85px;
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 2px dashed #c0c7cf;
+  border-radius: 6px;
+  resize: none;
+  overflow: hidden;
+}
+
+/* Start of Card Footer Styling*/ 
 .card-footer {
   text-align: center;
 }
@@ -93,31 +121,13 @@ button[disabled] {
   background: #c0c7cf;
 }
 
+/* End of Card Footer Styling*/ 
+
 .float-right {
   float: right;
 }
 
-#password {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  border: none;
-  display: block;
-  width: 100%;
-  padding-top: 15px;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-bottom: 85px;
-  font-size: 1.2rem;
-  text-align: center;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  border: 2px dashed #c0c7cf;
-  border-radius: 6px;
-  resize: none;
-  overflow: hidden;
-}
-
+/* Start of Media Styling */
 @media (max-width: 690px) {
   .btn {
     font-size: 1rem;
@@ -135,3 +145,4 @@ button[disabled] {
     font-size: 0.8rem;
   }
 }
+/* End of Media Styling */
